@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/alp/Documents/su/cppprogramming/CppCh3Ex3/build",
+  "command": "/usr/bin/g++  -I/home/alp/Documents/su/cppprogramming/CppCh3Ex3/include -g -o CMakeFiles/CppCh3Ex3.dir/src/ISBN.cpp.o -c /home/alp/Documents/su/cppprogramming/CppCh3Ex3/src/ISBN.cpp",
+  "file": "/home/alp/Documents/su/cppprogramming/CppCh3Ex3/src/ISBN.cpp"
+},
+{
+  "directory": "/home/alp/Documents/su/cppprogramming/CppCh3Ex3/build",
+  "command": "/usr/bin/g++  -I/home/alp/Documents/su/cppprogramming/CppCh3Ex3/include -g -o CMakeFiles/CppCh3Ex3.dir/src/main.cpp.o -c /home/alp/Documents/su/cppprogramming/CppCh3Ex3/src/main.cpp",
+  "file": "/home/alp/Documents/su/cppprogramming/CppCh3Ex3/src/main.cpp"
+}
+]

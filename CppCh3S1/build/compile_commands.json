@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/alp/Documents/su/cppprogramming/CppCh3S1/build",
+  "command": "/usr/bin/g++  -I/home/alp/Documents/su/cppprogramming/CppCh3S1/include -g -o CMakeFiles/CppCh3S1.dir/src/TimeStamp.cpp.o -c /home/alp/Documents/su/cppprogramming/CppCh3S1/src/TimeStamp.cpp",
+  "file": "/home/alp/Documents/su/cppprogramming/CppCh3S1/src/TimeStamp.cpp"
+},
+{
+  "directory": "/home/alp/Documents/su/cppprogramming/CppCh3S1/build",
+  "command": "/usr/bin/g++  -I/home/alp/Documents/su/cppprogramming/CppCh3S1/include -g -o CMakeFiles/CppCh3S1.dir/src/main.cpp.o -c /home/alp/Documents/su/cppprogramming/CppCh3S1/src/main.cpp",
+  "file": "/home/alp/Documents/su/cppprogramming/CppCh3S1/src/main.cpp"
+}
+]

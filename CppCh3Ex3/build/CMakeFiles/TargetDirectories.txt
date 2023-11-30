@@ -1,0 +1,3 @@
+/home/alp/Documents/su/cppprogramming/CppCh3Ex3/build/CMakeFiles/CppCh3Ex3.dir
+/home/alp/Documents/su/cppprogramming/CppCh3Ex3/build/CMakeFiles/edit_cache.dir
+/home/alp/Documents/su/cppprogramming/CppCh3Ex3/build/CMakeFiles/rebuild_cache.dir

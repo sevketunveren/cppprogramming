@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/CppCh3S1.dir/src/ISBN.cpp.o CMakeFiles/CppCh3S1.dir/src/main.cpp.o -o CppCh3S1 
