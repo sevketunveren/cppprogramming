@@ -9,9 +9,13 @@ class ISBN
 {
 public:
     //ISBN(const char* const pisbn);
-    ISBN(const string pisbn);
+    ISBN(const string isbnP);
     string getCountryCode() const;
+    string getPublicationCode() const;
+    string getUniqueId() const;
+    string getCheck() const;
     bool getValid() const;
+    string toString() const;
 private:
     ISBN();
     //const char* const isbn;

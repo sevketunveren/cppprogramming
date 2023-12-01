@@ -1,8 +1,8 @@
 #include <ISBN.h>
 
-ISBN::ISBN(const string pisbn) : isbn(pisbn), isValid(false)
+ISBN::ISBN(const string isbnP) : isbn(isbnP), isValid(false)
 {
-    if (pisbn.length() > ISBNSIZE)
+    if (isbnP.length() > ISBNSIZE)
     {
         throw invalid_argument("size is more than " + to_string(ISBNSIZE));
     }
@@ -15,25 +15,55 @@ ISBN::ISBN(const string pisbn) : isbn(pisbn), isValid(false)
 
 /*ISBN::ISBN(const char* const pisbn):isbn(pisbn)
 {
-    if(strlen(isbn)>14)
+    if(strlen(isbn)>ISBNSIZE)
     {
-        //isbn = "bos";
+        //isbn = "empty";
     }
 }*/
+
+string ISBN::getCountryCode() const
+{
+    return countryCode;
+}
+
+string ISBN::getPublicationCode() const
+{
+    return publicationCode;
+}
+
+string ISBN::getUniqueId() const
+{
+    return uniqueId;
+}
+
+string ISBN::getCheck() const
+{
+    return check;
+}
+
+bool ISBN::getValid() const
+{
+    return isValid;
+}
+
+string ISBN::toString() const
+{
+    return isbn;
+}
 
 bool ISBN::validate()
 {
     if (isbn.size() != ISBNSIZE)
         return false;
-    int sum = isbn[0]-'0';
-    for (int i = 1, k = 0; i < ISBNSIZE-1; ++i)
+    int sum = isbn[0] - '0';
+    for (int i = 1, k = 0; i < ISBNSIZE - 1; ++i)
     {
         if (isbn[i] == '-')
             continue;
-        sum += (k++ + 2) * (isbn[i]-'0');
+        sum += (k++ + 2) * (isbn[i] - '0');
     }
-    return sum%11==stoi(check);
-} 
+    return sum % 11 == stoi(check);
+}
 
 void ISBN::setCodes()
 {
@@ -49,16 +79,6 @@ void ISBN::setCodes()
         uniqueId = token[2];
         check = token[3];
     }
-}
-
-string ISBN::getCountryCode() const
-{
-    return isbn.substr(0, 1);
-}
-
-bool ISBN::getValid() const
-{
-    return isValid;
 }
 
 // In C++11, don't have to do return value optimization
