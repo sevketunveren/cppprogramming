@@ -3,7 +3,7 @@
 #define SPACESHIP_H
 
 #include "Vector3D.h"
-
+#define DT 0.016666667
 class Spaceship
 {
 public:
@@ -40,10 +40,15 @@ public:
   {
     return rateOfAcceleration;
   }
-  
-  inline Spaceship* getTarget()
+
+  inline Spaceship *getTarget()
   {
     return target;
+  }
+
+  void setTarget(Spaceship *const value)
+  {
+    target = value;
   }
 
   void update();
@@ -52,6 +57,6 @@ private:
   Vector3D position;
   Vector3D velocity;
   Vector3D rateOfAcceleration;
-  Spaceship* target;
+  Spaceship *target;
 };
 #endif
